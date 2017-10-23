@@ -10,4 +10,13 @@ package monopoly;
  * @author rickie
  */
 public class Die {
+    int sides;
+    
+    Die(int _sides){
+        sides = _sides;
+    }
+    
+    public int getSides(){
+        return sides;
+    }
 }

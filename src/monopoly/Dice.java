@@ -10,18 +10,21 @@ package monopoly;
  * @author rickie
  */
 public class Dice {
-    int die1, die2;
+    
+    Die die1 = new Die(6);
+    Die die2 = new Die(6);
+    int tDie1, tDie2; 
     Dice(){
         
     }
     
     public int throwDice(){
-        die1 = (int) Math.ceil(Math.random()*6);
-        die2 = (int) Math.ceil(Math.random()*6);
-        return die1+die2;
+        tDie1 = (int) Math.ceil(Math.random()*die1.getSides());
+        tDie2 = (int) Math.ceil(Math.random()*die2.getSides());
+        return tDie1+tDie2;
     }
     
     public boolean ifEqual(){
-        return (die1 == die2);
+        return (tDie1 == tDie2);
     }
 }

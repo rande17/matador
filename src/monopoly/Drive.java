@@ -14,8 +14,9 @@ public class Drive {
     public static Field[] field = new Field[40];
 
     public void makeFields() {
-        for (int i = 0; field.length > i; i++) {
-            field[i] = new Field("Field"+i, i);
+        for (int i = 0; field.length > i;) {
+            i++;
+            field[i-1] = new Field("Field"+i, i);
         }
     }
 

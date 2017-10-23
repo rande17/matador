@@ -23,12 +23,12 @@ public class Monopoly {
         player1 = new Player("Jeg lugter");
         player2 = new Player("Du lugter");
         
-        Dice die = new Dice();
+        Dice dice = new Dice();
         
         int i = 0;
         while(i < 1000){
-            player1.move(die);
-            player2.move(die);
+            player1.move(dice);
+            player2.move(dice);
             i++;
         }
     }
